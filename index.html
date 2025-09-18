@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navi ❣️</title>
+<link rel="icon" href="logo2-removebg-preview.png" />
+
+<style>
+/* ---------- Reset ---------- */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* ---------- Body ---------- */
+body{
+  font-family:'Segoe UI',Arial,sans-serif;
+  background:linear-gradient(135deg,#7e7676,#a28f9f);
+  color:#fff;
+  text-align:center;
+  overflow-x:hidden;
+  padding:1rem;
+  min-height:100vh;
+}
+
+/* ---------- Heading ---------- */
+.glow{
+  margin-top:1rem;
+  font-size:clamp(2rem,5vw,3.5rem);
+  text-shadow:0 0 10px hotpink,0 0 20px deeppink,0 0 30px purple;
+  animation:glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow{
+  from{ text-shadow:0 0 5px #ff66cc,0 0 10px #ff66cc;}
+  to  { text-shadow:0 0 20px #ff66cc,0 0 40px #ff3399;}
+}
+.message{
+  font-size:1.2rem;
+  margin:1rem 0 2rem;
+  color:#ffe4f2;
+}
+
+/* ---------- Top Image ---------- */
+.top-image{
+  display:flex;
+  justify-content:center;
+  margin-bottom:1.5rem;
+}
+.top-image img{
+  width:clamp(200px,40vw,400px);
+  border-radius:5%;
+  filter:drop-shadow(0 6px 10px rgba(0,0,0,0.5));
+}
+
+/* ---------- Gallery ---------- */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:1rem;
+  max-width:1100px;
+  margin:0 auto 2rem;
+}
+.gallery img{
+  width:100%;
+  border-radius:12px;
+  border:4px solid #fff;
+  object-fit:cover;
+  box-shadow:0 0 15px rgba(255,105,180,0.4);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+.gallery img:hover{
+  transform:scale(1.08) rotate(-2deg);
+  box-shadow:0 0 25px rgba(255,105,180,0.8);
+  cursor:pointer;
+}
+
+/* ---------- Hidden Memories ---------- */
+.hidden-section{
+  opacity:0;
+  animation:fadeIn 3s ease forwards;
+  animation-delay:1s;
+  margin-top:2rem;
+}
+.hidden-section h3{
+  font-size:1.5rem;
+  margin-bottom:1rem;
+  color:#ffccf2;
+}
+.hidden-section img{
+  width:clamp(150px,40vw,300px);
+  margin:0.5rem;
+  border-radius:10px;
+  transition:transform .3s ease;
+}
+.hidden-section img:hover{
+  transform:scale(1.05);
+}
+@keyframes fadeIn{
+  to{opacity:1;}
+}
+
+/* ---------- Floating Hearts ---------- */
+.hearts span{
+  position:absolute;
+  font-size:2rem;
+  opacity:0.7;
+  animation:float 6s linear infinite;
+}
+@keyframes float{
+  0%  {transform:translateY(100vh) rotate(0);}
+  100%{transform:translateY(-120vh) rotate(360deg);}
+}
+.hearts span:nth-child(1){left:10%;animation-delay:0s;}
+.hearts span:nth-child(2){left:30%;animation-delay:2s;}
+.hearts span:nth-child(3){left:50%;animation-delay:4s;}
+.hearts span:nth-child(4){left:70%;animation-delay:1s;}
+.hearts span:nth-child(5){left:90%;animation-delay:3s;}
+.hid{
+    filter: blur(50px);
+}
+.hid1{
+    /* filter: blur(10px); */
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">Happy Birthday Navi ❣️</h1>
+<p class="message">Wishing you endless joy, love, and laughter on your special day! 💐</p>
+
+<div class="top-image">
+  <img src="navi1__4_-removebg-preview.png" alt="Navi">
+</div>
+
+<div class="gallery">
+  <img src="moon.png" alt="Moon">
+  <img src="navi98.jpg" alt="">
+  <img src="navi99.jpg" alt="">
+  <img src="navi00.jpg" alt="">
+  <img src="navi01.jpg" alt="">
+  <img src="navi02.jpg" alt="">
+  <img src="navi03.jpg" alt="">
+  <img src="navi04.jpg" alt="">
+  <img src="navi05.jpg" alt="">
+  <img src="navi06.jpg" alt="">
+  <img src="navi07.jpg" alt="">
+  <img src="navi08.jpg" alt="">
+  <img src="navi09.jpg" alt="">
+  <img src="navi10.jpg" alt="">
+  <img src="navi11.jpg" alt="">
+  <img src="navi12.jpg" alt="">
+  <img src="navi13.jpg" alt="">
+  <img src="navi14.jpg" alt="">
+  <img src="navi15.jpg" alt="">
+  <img src="navi16.jpg" alt="">
+  <img src="navi17.jpg" alt="">
+  <img src="navi18.jpg" alt="">
+  <img src="navi19.jpg" alt="">
+  <img src="navi20.jpg" alt="">
+  <img src="navi21.jpg" alt="">
+  <img src="navi22.jpg" alt="">
+  <img src="navi23.jpg" alt="">
+  <img src="navi24.jpg" alt="">
+   <img src="navi25.jpg" alt="">
+</div>
+
+<!-- <div class="hidden-section">
+  <h3>Hidden Memories 💞</h3>
+  <img src="hidden.jpg" alt="Hidden memory" class="hid1">
+  <img src="mrg2.png" alt="Memory 2" class="hid">
+</div> -->
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="birthday.mp3" type="audio/mp3">
+</audio>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+  <span>❣️</span><span>❣️</span><span>❣️</span><span>❣️</span><span>❣️</span>
+</div>
+
+</body>
+</html>
